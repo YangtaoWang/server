@@ -19,7 +19,7 @@
         "ref": "origin/master",
         "repo": "git@github.com:YangtaoWang/server.git",
         "path": "/root/testserver",
-        "post-deploy" : "npm install && pm2 startOrRestart ecosystem.json --env production",
+        "post-deploy" : "pm2 startOrRestart ecosystem.json --env production",
         "ssh_options": "StrictHostKeyChecking=no",
         "env": {
           "NODE_ENV": "production"
